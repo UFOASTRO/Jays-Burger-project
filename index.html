@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay's Burgers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container1">
+    <div class="navbar" id="navbar">
+        <nav>
+            <h1 class="logo">JAY'S BURGERS</h1>
+            <ul>
+                <li><a href="#slideshow-container">HOME</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li> <a href="#contact">CONTACT</a></l>
+            </ul>
+        </nav>
+    </div>
+            <div class="slideshow-container" id="slideshow-container"> 
+              <img src="./images/jay_burger_logo-removebg-preview.png" alt="" id="logo">
+                <div class="mySlides fade">
+                  <!-- <div class="numbertext">1 / 3</div> -->
+                  <img src="https://images.unsplash.com/photo-1541557435984-1c79685a082b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%" height="10%">
+                  <!-- <div class="text">Caption Text</div> -->
+                </div>
+                
+                <div class="mySlides fade">
+                  <!-- <div class="numbertext">2 / 3</div> -->
+                  <img src="https://plus.unsplash.com/premium_photo-1663089784548-19b7825bc33c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+                  <!-- <div class="text">Caption Two</div> -->
+                </div>
+                
+                <div class="mySlides fade">
+                  <!-- <div class="numbertext">3 / 3</div> -->
+                  <img src="https://plus.unsplash.com/premium_photo-1661313658944-b4230290fb38?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+                  <!-- <div class="text">Caption Three</div> -->
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 3000); // Change image every 2 seconds
+                }
+        
+                </script>
+<script>
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="content">
+  <div class="hidden">
+    <div class="secti">
+    <H2 class="aboutus">ABOUT US</H2>
+    <div id="logobox"><img src="./images/jay_burger_logo-removebg-preview.png" alt=""height="350px" id="aboutuslogo"></div> <div class="lorem"> <p>Nestled in the heart of North London, Jays Burger is a cherished bar and grill with a rich history and a dedication to comfort and quality. Established in the early 1960s by brothers Jaymie and Jayden Greenwood, our family-owned restaurant has been serving up delicious comfort food for generations.
+    </p>
+      <br>
+      <p>
+At Jays Burger, our specialty is burgers. Juicy, flavorful, and made with love. We offer a wide range of burger variations, each crafted to perfection, along with succulent steaks that have become a local favorite. Our commitment to quality ingredients and exceptional taste shines through in every dish we serve.
+</p>
+<br>
+<p>
+What truly sets Jays Burger apart is our unwavering focus on making every customer feel right at home. From our warm, inviting atmosphere to our friendly staff, we prioritize your comfort and strive to create a dining experience that is both relaxing and memorable. Whether you're a long-time patron or a first-time visitor, you'll find a welcoming community and delicious comfort food waiting for you at Jays Burger.
+</p>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script defer>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) =>{
+      console.log(entry)
+      if (entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+      else{
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+</script>
+<h2 id="section2">MEET THE CREW</h2>
+ <div class="crew">
+   <div class="crew">
+     <img src="./images/joyful-young-afro-american-barber-wearing-uniform-pointing-himself-isolated-olive-green-wall.jpg" alt=""><p class="names">JAY          <br> <br>OWNER</p>
+   </div>
+   <div class="crew">
+     <img src="./images/portrait-emotive-good-looking-caucasian-woman-laughs-while-looking-directly-camera.jpg" alt=""><p class="names"> LINDA      <br><br> ACCOUNTANT</p>
+   </div>
+   <div class="crew">
+     <img src="./images/confident-young-male-barber-wearing-uniform-showing-heart-gesture-isolated-yellow-wall.jpg" alt=""> <P class="names">SAM<br><br>GRILL KING </P>
+   </div>
+  <div class="crew">
+    <img src="./images/young-african-american-female-posing-yellow.jpg" alt=""> <p class="names">NELLY <br><br>BAR TENDER</p>
+  </div>
+ </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="menu" id="menu">
+  <p id="ourspecials">OUR SPECIALS</p>
+  <div class="column">
+   <img src="./images/burrito-with-french-fries-vegetables.jpg" alt=""  width="315px" height="242px">
+   <br>
+   <p class="food-name">JAZZY BURITO CHICKEN WRAP</p>
+   <div class="pricing">
+    <p class="price">$5.99</p><p class="previous-price">$7.99</p>
+  </div>
+  <br>
+    <button class="order">order</button>
+  </div>
+
+  <div class="column">
+  <img src="./images/cheeseburger-with-french-fries-table.jpg" alt=""  width="315px" height="242px">
+  <br>
+  <p class="food-name">GRAMP JAY'S CLASSIC <br>SHRIMP BURGER</p>
+  <div class="pricing">
+  <p class="price">$8.99</p><p class="previous-price">$12.99</p>
+</div>
+<br>
+  <button class="order">order</button>
+  </div>
+  
+  <div class="column">
+<img src="./images/hot-dog-sandwich-with-french-fries.jpg" alt="" width="315px" height="242px">
+ <br>
+ <p class="food-name">GRIZZLY CLAW HOTDOG WRAP</p>
+ <div class="pricing">
+  <p class="price">$10.99</p><p class="previous-price">$14.99</p>
+</div>
+<br>
+  <button class="order">order</button>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+    <br><div class="newone" id="contact">
+    <div class="covering">
+    <div class="container">
+    <div class="contentr">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Surkhet, NP12</div>
+          <div class="text-two">Birendranagar 06</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+0098 9893 5647</div>
+          <div class="text-two">+0096 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">jaysburgers@gmail.com</div>
+          <div class="text-two">jaimiegreenwood@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you would like to order in bulk, or have us serve when you host an event ,you can send us a message from here.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <!-- <div class="input-box message-box">
+          
+        </div> -->
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+  </div>
+    </div>
+  </div> 
+  <p id="credit">Website designed and developed by Bello Oluwanifemi</p>
+  </div>
+</div>
+</body>
+</html>
