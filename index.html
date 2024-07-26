@@ -20,11 +20,20 @@
     <div class="navbar" id="navbar">
         <nav>
             <h1 class="logo"><a href="#slideshow-container">JAY'S BURGERS</a></h1><i class="fa-solid fa-bars" id="bars"></i>
-            <ul>
-                <li><a href="#slideshow-container">HOME</a></li>
-                <li><a href="#menu">MENU</a></li>
-                <li> <a href="#contact">CONTACT</a></l>
+        
+            <ul id="links" class="">
+                <li class="menu-items"><a href="#slideshow-container">HOME</a></li>
+                <li class="menu-items"><a href="#menu">MENU</a></li>
+                <li class="menu-items"><a href="#contact">CONTACT</a></li>
             </ul>
+            <script defer>
+
+              document.getElementById("bars").addEventListener("click", function() {
+                var navbar = document.getElementById("links");
+                navbar.classList.toggle("view");
+
+              });
+            </script>
         </nav>
     </div>
             <div class="slideshow-container" id="slideshow-container"> 
@@ -143,7 +152,7 @@ What truly sets Jays Burger apart is our unwavering focus on making every custom
   hiddenElements.forEach((el) => observer.observe(el));
 </script>
 <h2 id="section2">MEET THE CREW</h2>
- <div class="crew">
+ <div class="crew1">
    <div class="crew">
      <img src="https://img.freepik.com/free-photo/joyful-young-afro-american-barber-wearing-uniform-pointing-himself-isolated-olive-green-wall_141793-112217.jpg?t=st=1720972888~exp=1720976488~hmac=83e17812e08398f78c14f31470bc304784e961d01683ff7c085ff9be77109184&w=826" alt=""><p class="names">JAY          <br> <br>OWNER</p>
    </div>
@@ -248,7 +257,7 @@ What truly sets Jays Burger apart is our unwavering focus on making every custom
       </div>
       <div class="right-side">
         <div class="topic-text">Send us a message</div>
-        <p>If you would like to order in bulk, or have us serve when you host an event ,you can send us a message from here.</p>
+        <p id="other-text">If you would like to order in bulk, or have us serve when you host an event ,you can send us a message from here.</p>
       <form action="#">
         <div class="input-box">
           <input type="text" placeholder="Enter your name">
