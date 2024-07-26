@@ -212,6 +212,7 @@ transform: translateX(0);
     position: relative;
     margin-top:4vw;
 }
+
 .names{
     font-size:25px;
     font-family: "Merriweather Sans", sans-serif;
@@ -397,7 +398,7 @@ background-color:red;
     background-color: #f1f1f1;
   } */
   .LOL{
-    display:
+    display:block
   };
  #other-text{
   /* background-color: blue; */
@@ -707,6 +708,56 @@ background-color:red;
  }
  #menu-box{
   display: none;
+ }
+
+ .view{
+  position: absolute;
+  z-index: 1000;
+  display: block;
+  width: 100px;
+}
+ul{
+  background-color: rgb(195,29, 29);
+  /* position: absolute; */
+  right:0;
+  /* top:50%; */
+  /* min-height:250px; */
+  /* width: 50%; */
+  margin-top:25vh;
+  /* text-align: center; */
+  /* line-height: 30px; */
+  /* margin: auto; */
+  /* text-align: ; */
+ /* width:500px; */
+padding:0;
+}
+li>a{
+  color:white;
+}
+li>a:active{
+  color:black;
+  transition-duration:0.2s;
+}
+#links{
+  width: 100%;
+  /* color: blue; */
+  /* background-color: red; */
+  /* align-items: center; */
+  text-align: center;
+
+}
+.menu-items{
+  padding: 12px;
+  /* color: white; */
+  /* text-align: center; */
+  /* top:50%; */
+  /* left:50%; */
+  /* margin:0 auto;  */
+  /* background-color: red; */
+  /* transform: translate(-50% -50%); */
+}
+ li:hover{
+/* background-color: red; */
  }
   }
    
