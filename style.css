@@ -51,6 +51,7 @@ nav{
     background-color: black;
     margin: 0;
     padding:20px;
+ overflow: hidden;
     /* position:fixed; */
     
 }
